@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+		<link href="changingStyle.css" rel="stylesheet" type="text/css" />
+		<title>Changes</title>
+		
+		<script>
+			
+			function color(){
+				document.getElementById("changing").style.textAlign = "right";
+				var theColor = document.getElementById("Input").value;
+				document.getElementById("heading1").style.color = theColor;
+			}
+			function coding(){
+				document.getElementById("smiling").src = "thumbsUp.jpg";
+			}
+			
+			function image1(){
+				document.getElementById("bigPicture").src = "alligator.jpg";
+				document.getElementById("caption").innerHTML = "See the alligators";
+			}
+			function image2(){
+				document.getElementById("bigPicture").src = "fatBoy.jpg";
+				document.getElementById("caption").innerHTML = "Look at it Go!";
+			}
+			function image3(){
+				document.getElementById("bigPicture").src = "gatorGoing.jpg";
+				document.getElementById("caption").innerHTML = "With vim and vigor!";
+			}
+			function image4(){
+				document.getElementById("bigPicture").src = "gatorRain.jpg";
+				document.getElementById("caption").innerHTML = "Roll out the Barrel!";
+			}
+		</script>
+</head>
+	<body>
+	
+		<div>
+			<h1 id="heading1">Making Changes With JavaScript</h1>
+			<h1 id="heading2">Making Changes With CSS</h1>
+			<p id="changing">You can make lots of changes to the HTML using JavaScript. In this section we will make changes to the style of the first heading using JavaScript. Watch as the style changes. We will also make changes to the second heading but we will do this with CSS.</p>
+		 	<label for ="Input">Enter the value for a color:</label>
+			<input type="text" id="Input"/>
+			<button type="button" onClick="color()">Submit</button>
+		</div>
+		<div>
+			<h1>Be Happy</h1>
+			
+			<p><img src="sunglasses.png" alt="Picture of Smiling Face" id ="smiling"/></p>
+			
+				<p><button type="button" onClick="coding()">Click Me!</button></p>
+			
+		
+		</div>
+		<div>
+			<h1>Aligators</h1>
+			
+			<p><img src="alligator.jpg" alt="Picture of Alligator" id="bigPicture"/></p>
+			
+			<p id="caption">See the alligators</p>
+			
+			<p>
+				<button type="button" onClick ="image1()"> 
+				<img src="alligator.jpg" alt="Picture of Alligator" />
+				</button>
+				<button type="button" onClick ="image2()"> 
+				<img src="fatBoy.jpg" alt="Picture of Alligator" />
+				</button>
+				<button type="button" onClick ="image3()"> 
+				<img src="gatorGoing.jpg" alt="Picture of Alligator" />
+				</button>
+				<button type="button" onClick ="image4()"> 
+				<img src="gatorRain.jpg" alt="Picture of Alligator" />
+				</button>
+			</p>
+			
+		</div>
+	</body>
+</html>

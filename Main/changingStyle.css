@@ -1,0 +1,25 @@
+body {
+background-color:#9CBE9D;
+width: 720px;
+margin: auto;
+}
+img {
+height: 300px;
+}
+div {
+width: 100%;
+text-align:center;
+margin:24px auto;
+border: 4px solid #4d894d;
+padding: 12px;
+}
+p#changing {
+	text-align:left;	margin: auto 68px;
+}
+h1#heading2 {
+	color: #ab6161;
+	
+}
+button img{
+	height: 94px;
+}
